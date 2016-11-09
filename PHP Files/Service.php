@@ -15,7 +15,7 @@ class Service {
 		self::$dbname = Conn::$dbname;
 	}
 	public static function openConnection() {
-		self::$conn = new mysqli ( "192.168.1.90:3306", "Kara", "!LEftGrIpS2#7AyyLMaoDuvy2I3F?", "nhs");
+		self::$conn = new mysqli ( "Server-address", " *a username* ", " *password* ", "Table_name");
 		if (mysqli_connect_errno ())
 			echo new Exception ( "Could not establish connection with database" );
 	}
