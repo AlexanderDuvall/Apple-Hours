@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+
+<link type="text/css" rel="stylesheet" href="teacher_sign_up.css"/>
+	<title>AppleHours</title>
+</head>
+<body>
+	<div class = "header">
+<img src="AppleHour Logo_AP1.png"/>
+	<div class = "header-list">
+		<ul>
+			<li>Students</li>
+			<li>Admins</li>
+			<li>SignUp</li>
+		</ul>
+	</div>
+</div>
+<div class = "holder">
+<div class="title">
+	<h2>Teacher Sign Up </h2>
+</div>
+
+
+<p>Welcome to AppleHours! By signing up as a teacher you have all the advantages in tracking community service we offer! Fill out all the fields below. It wont take long, we promise!</p>
+<p><strong>User Information</strong></p>
+<form  method = "POST" action ="http://192.168.1.90:80/InsertAdmin.php">
+  <p id = "parName"> First Name</p>
+  <input type="text" id="FirstName" name="firstName">  
+  <p id = "parName"> Last Name</p>
+  <input type="text" id="LastName" name="lastName">
+   <p id = "parName"> Organization</p>
+  <input type="text" id="organization" name="organization">
+  <p><strong>Profile Information</strong></p>
+  <p id = "parName"> Email</p>
+  <input type="text" id="email" name="email">  
+  <p id = "parName"> Profile Password</p>
+  <input type="text" id="profilepassword" name="password">
+  <p><strong>Family Information</strong></p>
+  <p>A family is like a group. Students who add your group password to their profile allow you to view their community service statistics. Dont worry, As you acquire more students you'll be able to sort through. </p>
+    <p id = "parName"> Family Password</p>
+  <input type="text" id="family" name="family">
+  <p>By creating your profile you agree to our terms of use and privacy policy</p>
+  <button class="button"><span>I agree - CreateProfile</span></button>
+</form>
+</div>
+	
+</body>
